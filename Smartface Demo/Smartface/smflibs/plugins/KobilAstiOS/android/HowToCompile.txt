@@ -1,0 +1,11 @@
+'java' directory contains example files for java code. 
+
+'inc' directory contains JavaScriptCore header files. Don't touch them :)
+
+plugin-jni.cpp implements the interface for loading the actual plugin.
+
+Before compiling copy the libsprat-jni.so to this directory.
+
+Complile with ndk-build
+
+

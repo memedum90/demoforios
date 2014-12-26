@@ -1,0 +1,28 @@
+
+This directory contains code to deal with Kofax KFS Web Services.
+
+For the most part, it was generated using the online SudZC tool at sudzc.com.
+
+The contents of /Soap and /TouchXML contain no code specific to this application, though
+
+
+
+Using the code in this folder requires the app link to the CoreConfiguration framework and libxml2.
+
+To add a new service:
+
+- Go to sudzc.com and generate the code for the service (objective-C for iOS - WITH auto ref count)
+  Use the prefix "KFX".
+  something like: http://63.110.241.21/KFS/axis2/services/UserLoginService?wsdl  
+  
+
+- From the zip/source/generated, copy everything into prj/KofaxServices that isn't already there
+  (result definitions and the like might already be there for another service)
+  
+- Edit KFXServices.h/.m to include the new service.
+
+- In [NewServiceName].m/.h:
+  If the request involves array fields, they get done wrong and you have to fix 'em. See KfxWscindexField
+  
+  
+  

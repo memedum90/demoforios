@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<app>
+	<whitelist length="1">
+		<!-- This white list of URLs is interpreted as "Regular Expression". The "length" must be correct! -->
+		<string>https://192.168.3.119/.*</string>
+
+	</whitelist>
+
+	<certificatePolicy>software</certificatePolicy>   <!-- software, hardware, both -->
+	<webViewPolicy>user</webViewPolicy>               <!-- always, never, user -->
+
+	<webPortalUrl>https://192.168.3.119/asm-portaldemo/AppEntry?otp=</webPortalUrl>
+
+	<!-- If the connection to the SSMS was lost, the SDK will try to reestablish the connection -->
+	<connectionRetryCounter>5</connectionRetryCounter>
+	<!-- After each connection retry, the SDK will wait an interval (in seconds) before trying to reconnect -->
+	<connectionRetryInterval>5</connectionRetryInterval>
+
+	<!-- If the app is not used during this time interval (in seconds), it will be logged out. Only Trusted Message Sign -->
+	<appInactivityTimeout>600</appInactivityTimeout>
+
+	<!-- If the server did not reply within this time interval (in seconds), an error status will be sent to the app -->
+	<serverBusyTimeout>30</serverBusyTimeout>
+	
+	<userCredentialsPath>%APPDATA%/KOBIL/%APP_NAME%</userCredentialsPath>
+	
+	<useWebView>false</useWebView>
+	<useMessageSign>true</useMessageSign>
+	<useDeviceNameSoftware>false</useDeviceNameSoftware>
+	<useDeviceNameHardware>false</useDeviceNameHardware>
+	<useQRCode>false</useQRCode>
+
+	<showReActivate>true</showReActivate>
+	<showLogoutButton>true</showLogoutButton>
+	<showUnblockPinDialog>true</showUnblockPinDialog>
+	
+	<!-- <startWithInfoUrl>https://192.168.3.119/asm-portaldemo/PreLogin.html</startWithInfoUrl> -->
+
+	<minimumPinLength>4</minimumPinLength>
+	<defaultLanguage>en</defaultLanguage>
+	<PinRegexp>[0-9]{6,16}</PinRegexp>
+	<PukRegexp>[0-9]{6,16}</PukRegexp>
+	<forgotActivationCodeUrl>https://192.168.3.119/asm-portaldemo/AppEntry?action=forgotActivationCode</forgotActivationCodeUrl>
+	<forgotPinUrl>https://192.168.3.119/asm-portaldemo/AppEntry?action=forgotPin</forgotPinUrl>
+	<forgotPinUrlHardware>https://192.168.3.119/asm-portaldemo/AppEntry?action=forgotPinHardware</forgotPinUrlHardware>
+	<requestActivationCodeUrl>https://192.168.3.119/asm-portaldemo/AppEntry?action=newRegistration</requestActivationCodeUrl>
+	<trustMessageSignUrl>https://192.168.3.119/asm-portaldemo/Login</trustMessageSignUrl>
+	<helpUrl>http://www.kobil.com/support/faqs.html</helpUrl>
+	
+	<!-- Possible Values: true, false. Enable to receive PUSH Notifications.  -->
+	<usePushNotification>true</usePushNotification>
+	
+	<!-- Possible Values: WebView, MessageSign, QrLogin. Declare view where incoming messages will be displayed instantly  -->
+	<idleView>WebView</idleView>
+	
+	<!-- Possible Values: true, false. Declare view where incoming messages will be displayed instantly  -->
+	<useAutoLogin>true</useAutoLogin>
+
+    <allowedHostDevices>*</allowedHostDevices>
+    <allowedHostDevicesAndroid>.*</allowedHostDevicesAndroid>
+	<allowedHostDevicesApple>.*</allowedHostDevicesApple>
+    <ActivationCodeRegexp>.*</ActivationCodeRegexp>
+    
+    <tabToDisplayTransaction>1</tabToDisplayTransaction>
+    
+    <!-- Enable it to see an additional tab which shows and collects display messages and transactions.  -->
+    <useInbox>false</useInbox>
+    
+    <!-- Set to true to enable family scenario -->
+     <supportFamilyScenario>false</supportFamilyScenario>
+     
+     <!-- Shows the delete ell users at once button on user list when Family Scenario is enabled -->
+     <showDeleteAllUsers>false</showDeleteAllUsers>
+     
+     <!-- Can be used to list all supported app languages -->
+     <supportedLanguages>de,en</supportedLanguages>
+     
+     <!-- The app opens this url on logout via GUI.  -->
+     <openOnLogoutUrl>null</openOnLogoutUrl>
+     
+     
+     <!--  -->
+     <useDeveloperMode>false</useDeveloperMode>
+     
+     <!--  Declare view where incoming messages will be displayed instantly. Possible values: WebView, MessageSign, QrLogin -->
+     <idleView>WebView</idleView>
+     
+     
+     
+     
+     
+    
+	
+</app>

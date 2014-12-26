@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B418D970-E367-41E8-9906-92B2EB3B4703</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Smartface</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6D43AA60-11F6-4CE5-80ED-E3FA2EB1C1BD</key>
+		<string>https://svndeveloper.mobinex.biz/svn/smf-player-ios/4.2.3</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>releaseProjects/SmartfacePlayer/Smartface.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6D43AA60-11F6-4CE5-80ED-E3FA2EB1C1BD</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>6D43AA60-11F6-4CE5-80ED-E3FA2EB1C1BD</key>
+		<string>https://svndeveloper.mobinex.biz/svn/smf-player-ios</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://svndeveloper.mobinex.biz/svn/smf-player-ios/4.2.3/releaseProjects/SmartfacePlayer/Smartface.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6D43AA60-11F6-4CE5-80ED-E3FA2EB1C1BD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6D43AA60-11F6-4CE5-80ED-E3FA2EB1C1BD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-4.2.3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
